@@ -1,10 +1,12 @@
-const gulp = require("gulp");
-const browserSync = require("browser-sync");
-const sass = require("gulp-sass")(require("sass"));
-const cleanCSS = require("gulp-clean-css");
-const autoprefixer = require("gulp-autoprefixer");
-const rename = require("gulp-rename");
-const htmlmin = require("gulp-htmlmin");
+const gulp 			= require("gulp");
+const browserSync 	= require("browser-sync");
+const sass 			= require("gulp-sass")(require("sass"));
+const cleanCSS 		= require("gulp-clean-css");
+const autoprefixer 	= require("gulp-autoprefixer");
+const rename 		= require("gulp-rename");
+const htmlmin 		= require("gulp-htmlmin");
+const imagemin 		= require("gulp-imagemin");
+
 
 gulp.task("server", function () {
 	browserSync({
@@ -67,6 +69,7 @@ gulp.task("icons", function () {
 gulp.task("images", function () {
 	return gulp
 		.src("src/img/**/*")
+		.pipe(imagemin())
 		.pipe(gulp.dest("dist/img"))
 		.pipe(browserSync.stream());
 });
