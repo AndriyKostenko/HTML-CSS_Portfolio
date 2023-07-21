@@ -1,6 +1,6 @@
 .sidepanel {
     position: absolute;
-    top: 230px;
+    top: 150px;
     left: 50px;
     display: flex;
     flex-direction: column;
@@ -8,6 +8,14 @@
     align-items: center;
     height: 250px;
     z-index: 1;
+    &__link {
+        img {
+            &:hover {
+                box-shadow: 3px 3px 20px $btn-main-color;
+                height: 105%;
+            }
+        }
+    }
     &__divider {
         width: 2px;
         height: 70px;
@@ -22,5 +30,6 @@
             transform: rotate(-90deg) translate(-30%, -10%);
         }
     }
+
 
 }
