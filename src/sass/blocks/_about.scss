@@ -6,7 +6,6 @@
         grid-template-rows: minmax(115px, auto) minmax(115px, auto);
         grid-auto-rows: minmax(135px, auto);
         column-gap: 40px;
-        row-gap: 40px;
     }
     &__photo {
         grid-row: 1/4;
@@ -18,7 +17,7 @@
     }
     &__descr {
         .divider {
-            margin-top: 0;
+            margin: 0;
         }
     }
     &__title {

@@ -13,6 +13,7 @@
         
     }
     &__social {
+        padding-left: 3px;
         width: 200px;
         height: 60px;
         display: flex;
@@ -47,6 +48,8 @@
 
     &__btns {
         margin-top: 20px;
+        padding-right: 50px;
+        
     }
     &__link {
         color: #000;
@@ -55,6 +58,7 @@
             color: gold;
             text-decoration: none;
         }
+
     }
     &__main_photo {
         grid-column: 2/3;
