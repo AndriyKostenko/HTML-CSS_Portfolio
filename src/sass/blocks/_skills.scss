@@ -1,10 +1,23 @@
 .skills {
     padding-top: 120px;
+    &__title {
+        position: relative;
+        text-align: center;
+        @include before_circle;
+        &:before {
+            top: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &__subtitle {
+        text-align: center;
+    }
     &__wrapper {
         padding: 60px ;
         display: grid;
         grid-template-columns: repeat(4, 1fr);
-        grid-auto-rows: auto;
+        grid-auto-rows: 1fr;
         column-gap: 15px;
         row-gap: 15px;
     }
@@ -13,17 +26,19 @@
         &:hover {
             box-shadow: 0 0 11px rgba(249,180,45,.7);
         }
+        &-title {
+            padding-top: 20px;
+            padding-left: 20px;
+            font-size: 14px;
+            font-weight: 700;
+        }
+
     }   
     &__icon {
         padding-top: 20px;
         padding-left: 20px;
     }
-    &__title {
-        padding-top: 20px;
-        padding-left: 20px;
-        font-size: 14px;
-        font-weight: 700;
-    }
+
     &__descr {
         padding-top: 20px;
         padding-left: 20px;
