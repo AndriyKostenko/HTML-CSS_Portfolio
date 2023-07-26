@@ -7,19 +7,18 @@
     &__wrapper {
         display: grid;
         grid-template-columns: 500px 620px;
-        grid-template-rows: 100px 150px 120px 60px;
+        grid-template-rows: 100px 150px 100px 100px;
         column-gap: 20px;
 
         
     }
     &__social {
         padding-left: 3px;
-        width: 200px;
+        width: 270px;
         height: 60px;
         display: flex;
         justify-content: space-between;
-        align-items: center;
-        // place-self: center;
+        align-items:first baseline;
         grid-row: 4;
   
         &-link {
@@ -38,10 +37,14 @@
         position: relative;
         z-index: 1;
         padding-left: 12px;
-        padding-top: 5px;
+        padding-top: 50px;
         @include before_circle;
-
+        &:before {
+            top: 45%;
+        }
     }
+
+    
     &__title {
         margin-top: 10px;
     }
