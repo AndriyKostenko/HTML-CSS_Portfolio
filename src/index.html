@@ -41,6 +41,15 @@
     <meta name="msapplication-TileImage" content="icons/favicon/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
+    <script type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("8sbKbHp2-XUMRl7lP");
+            })();
+    </script>
+
     <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -107,7 +116,7 @@
         <div class="container">
             <div class="about__wrapper">
                 <div class="about__photo">
-                    <img src="img/main_photo.jpeg" alt="photo">
+                    <img src="img/secondary_photo.png" alt="photo">
                 </div>
                 
                 <div class="about__descr">
@@ -366,7 +375,7 @@
         <div class="container">
             <div class="contacts__wrapper">
                 <div class="contacts__photo">
-                    <img src="img/main_photo.jpeg" alt="main_photo">
+                    <img src="img/secondary_photo.png" alt="main_photo">
                 </div>
                 <div class="contacts__descr">
                     <h2 class="title title_fz16 contacts__title">Contacts</h2>
@@ -385,14 +394,17 @@
                             <img src="icons/social/github.svg" alt="github">
                         </a>
                     </div>
-
-                 
-
                     <div class="title title_fz14 contacts__text">
                         Or leave your details and I will write to you
                     </div>
 
-                    <form action="#" class="contacts__form">
+
+
+
+                    <form  id="contact_form"
+                           class="contacts__form"
+                        
+                           >
                         <div class="contacts__input">
                             <input required name="name" 
                                     id ="name" 
@@ -410,12 +422,13 @@
                             <label for="email">Your email</label>
                         </div>
                         <div class="contacts__textarea">
-                            <textarea required name="text" 
+                            <textarea required 
+                                      name="message" 
                                       id="text"
                                       placeholder="Write smth..."></textarea>
                             <label for="text">Your message</label>
                         </div>
-                        <button class="contacts__btn btn">Send message</button>
+                        <button id="email_button"  class="contacts__btn btn">Send message</button>
                     </form>
     
                 </div>
@@ -423,13 +436,6 @@
             </div>
         </div>
     </section>
-
-
-
-
-
-
-
 
 
 

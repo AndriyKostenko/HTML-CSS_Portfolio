@@ -63,11 +63,12 @@
     &__main_photo {
         grid-column: 2/3;
         grid-row: 1/5;
-        background: url(../../img/main_photo.jpeg);
+        background: url(../../img/main_photo.png);
+        background-color: orange;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        box-shadow: inset 0 0 0 5px rgba(255,165,0, 0.5); 
+        box-shadow: inset 0 0 0 5px rgba(255,165,0, 1); 
         order: 1;
         justify-self: center;
         width: 100%;
