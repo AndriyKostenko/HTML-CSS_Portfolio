@@ -11,3 +11,17 @@
         background: $btn-main-color;
     }
 }
+
+@mixin rotate_social {
+    a {
+        text-decoration: none;
+        img {
+            transform: rotate(90deg);
+            &:hover {
+                scale: 1.8;
+                transition: 0.6s all;
+                transform: rotate(450deg);
+            }
+        }
+    }
+}

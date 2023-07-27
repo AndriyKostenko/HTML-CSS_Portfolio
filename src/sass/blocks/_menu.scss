@@ -9,14 +9,26 @@
     align-items: flex-end;
     cursor: pointer;
     span {
+        background-color: white;
         display: block;
         width: 30px;
         height: 3px;
-        background-color: #151812;
     }
     span.long {
+        background-color: white;
         width: 36px;
     }
+    &:hover {
+        span {
+            background-color: orange;
+        }
+        span.long {
+            background-color: orange;
+        }
+
+    }
+
+
 }
 
 .menu {
@@ -112,16 +124,8 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
-        a {
-            img {
-                transform: rotate(90deg);
-                &:hover {
-                    height: 40px;
-                    transition: 0.6s all;
-                    transform: rotate(450deg);
-                }
-            }
-        }
+        @include rotate_social;
+
     }
     &__overlay {
         position: fixed;
