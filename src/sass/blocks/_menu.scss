@@ -20,10 +20,10 @@
     }
     &:hover {
         span {
-            background-color: orange;
+            background-color: $btn-main-color;
         }
         span.long {
-            background-color: orange;
+            background-color: $btn-main-color;
         }
 
     }
@@ -73,23 +73,29 @@
         font-size: 24px;
         line-height: 36px;
         margin-bottom: 15px;
-        &::after {
-            content: '';
-            position: absolute;
-            left: -35px;
-            top: 10px;
-            width: 15px;
-            height: 15px;
-            border-radius: 100%;
-            border: 1px solid #000;
-            opacity: 1;
-        }
+        // &::after {
+        //     content: '';
+        //     position: absolute;
+        //     left: -35px;
+        //     top: 10px;
+        //     width: 15px;
+        //     height: 15px;
+        //     border-radius: 100%;
+        //     border: 1px solid #000;
+        //     opacity: 1;
+        // }
         a {
             display: block;
             position: relative;
             color: #fff;
             text-decoration: none;
             overflow: hidden;
+            span {
+                font-size: 12px;
+                color: white;
+                font-weight: 70;
+                
+            }
             &::after {
                 content: '';
                 position: absolute;

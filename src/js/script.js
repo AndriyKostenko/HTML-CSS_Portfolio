@@ -1,6 +1,10 @@
 const hamburger = document.querySelector('.hamburger'),
       menu = document.querySelector('.menu'),
-      close = document.querySelector('.menu__close');
+      close = document.querySelector('.menu__close'),
+      nav_links = document.querySelectorAll('.menu__link'),
+      arrow = document.getElementsByClassName('pageup');
+
+console.log(arrow);
       
 
  
@@ -12,6 +16,22 @@ function open_close_menu(hamburger, close, menu) {
     close.addEventListener('click', () => {
         menu.classList.remove('active');
     })
+
+    nav_links.forEach((element) => {
+        element.addEventListener('click', () => {
+            menu.classList.remove('active');
+        })
+    })
+}
+
+function topArrow(arrow){
+    window.onscroll = function() {
+        if (window.scrollY > 1300) {
+            arrow[0].classList.add('pageup-trigger');
+        } else {
+            arrow[0].classList.remove('pageup-trigger');
+        }
+    }
 }
     
 
@@ -34,3 +54,4 @@ window.onload = function() {
 
 
 open_close_menu(hamburger, close, menu);
+topArrow(arrow);

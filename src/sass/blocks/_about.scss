@@ -16,7 +16,7 @@
             }
         }
         img {
-            background-color: lightgray;
+            background-color: #dcd75c;
         }
 
     }
@@ -69,8 +69,8 @@
         column-gap: 50px;
         row-gap: 20px;
         img {
-            padding-left: 15px;
-            padding-top: 15px;
+            // padding-left: 15px;
+            // padding-top: 15px;
         }
         &-item {
             display: grid;
@@ -79,7 +79,7 @@
         }
         &-circle {
             position: relative;
-            @include before_circle;
+            // @include before_circle;
         }
         &-text {
             margin-top: 6px;

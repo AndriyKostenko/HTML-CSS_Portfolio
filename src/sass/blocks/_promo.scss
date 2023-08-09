@@ -1,7 +1,9 @@
 .promo {
-    max-height: 600px;
+    max-height: 620px;
     background-color: $bg-main-color;
-    padding-top: 150px;
+    padding-top: 130px;
+    padding-bottom: 50px;
+
 
 
     &__wrapper {
@@ -40,16 +42,17 @@
         color: white;
         font-weight: bold;
 
+
     }
     &__main_photo {
         grid-column: 2/3;
         grid-row: 1/4;
-        background: url(../../img/main_phot.png);
-        background-color: orange;
+        background: url(../../img/main_photo.png);
+        background-color: #DCD75C;
         background-repeat: no-repeat;
         background-position: center;
         background-size: cover;
-        box-shadow: inset 0 0 0 5px rgba(255,165,0, 1); 
+        // box-shadow: inset 0 0 0 5px gold; 
         order: 1;
         justify-self: center;
         width: 100%;
