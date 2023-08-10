@@ -3,18 +3,12 @@
     background-color: $bg-main-color;
     padding-top: 130px;
     padding-bottom: 50px;
-
-
-
     &__wrapper {
         display: grid;
         grid-template-columns: 500px 620px;
         grid-template-rows: 100px 150px 200px;
         column-gap: 20px;
-
-        
     }
-
     &__subtitle {
         color: white;
         position: relative;
@@ -26,14 +20,14 @@
             top: 45%;
         }
     }
-
-    
     &__title {
         color: white;
         margin-top: 10px;
     }
 
     &__btns {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         margin-top: 20px;
         padding-right: 50px;
         
@@ -41,8 +35,6 @@
     &__link {
         color: white;
         font-weight: bold;
-
-
     }
     &__main_photo {
         grid-column: 2/3;
