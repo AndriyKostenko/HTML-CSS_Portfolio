@@ -1,4 +1,4 @@
-My lovely girlfriend's Portfolio Website.
+My lovely wife's Portfolio Website.
 
 
 1. `git clone https://github.com/AndriyKostenko/HTML-CSS_Portfolio.git` - copying the project
