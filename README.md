@@ -5,7 +5,7 @@ My lovely wife's Portfolio Website.
 
 2. `npm install` - install all dependecies
 
-3. `gulp` - start building of project 
+3. `gulp` - start building of projectt
 
 4. `npm update --save` - in case update is needed
   
